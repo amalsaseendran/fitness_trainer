@@ -192,9 +192,9 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
 
                 if angle > 160:
                     stage = "up"
-                if angle < 91 and stage == "up":
+                if angle < 90 and stage == "up":
                     stage = "down"
-                    counter += 2
+                    counter += 1
 
         except:
             pass
